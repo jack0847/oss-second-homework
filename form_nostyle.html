@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="sign">
+        <img src="imges.png" alt="Centerd Image">
+
+    </div>
+
+
+    <h2>Checkout form</h2>
+    <p>Below is an example form built entirely with Bootstrap’s form controls. 
+        Each required form group has a validation state that can be triggered by attempting to submit the form without completing it. 
+        </p>
+        <form method="GET" action="form_ok.html"> 
+        <div class="all">
+            <div class="container">
+                <h2>Billing address</h2>
+       
+            <div class="row">
+                <div class="col">
+                    <label for="first_name">First name</label>
+                     <input type="text" id="first_name" name="fname" required>
+                </div>
+                <div class="col">
+                    <label for="last_name">Last name</label>
+                    <input type="text" id="last_name" name="lname" required>
+                </div>
+            </div>
+             <div class="row">
+                <div class="col">
+                     <label for="birthdate">Birthdate</label>
+                     <input type="date" id="birthdate" name="birthdate" required>
+                 </div>
+            </div>
+            <div class="name">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="uname" placeholder="@ Username">
+            </div>
+
+            <div class="email">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com">
+             </div>
+
+             <div class="address">
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" placeholder="1234 Main St">
+             </div>
+
+             <div class="address2">
+            <label for="address2">Address2</label>
+            <input type="text" id="address2" name="address2" placeholder="Apartment or suite">
+             </div>
+
+             <div class="row">
+                <div class="col">
+                    <label for="country">Country</label>
+                     <select id="country" name="country">
+                        <option value=" ">Choose...</option>
+                        <option value="korea">Korea</option>
+                     </select>
+                </div>
+                <div class="col">
+                    <label for="state">State</label>
+                    <select id="state" name="state">
+                        <option value=" ">Choose...</option>
+                        <option value="seoul">Seoul</option>
+                        <option value="pohang">Pohang</option>
+                     </select>
+                </div>
+                <div class="col">
+                    <label for="zip">Zip</label>
+                    <input type="text" id="zip" name="zip">
+                </div>
+            </div>
+             
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox">Shipping address is the same as my billing address
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox">Save this information for next time
+                </label>
+            </div>
+
+            <div class="payment">Payment</div>
+            <div class="radio">
+                 <label><input type="radio" name="pay" checked>Credit card </label><br>
+                 <label> <input type="radio" name="pay" >Debit card </label><br>
+                 <label> <input type="radio" name="pay" >PayPal </label><br>
+             </div>
+
+             <div class="row">
+                <div class="col">
+                    <label for="card_name">Name on card</label>
+                    <input type="text" id="card_name" name="card_name" placeholder="Full name as displayed on card" required>
+                </div>
+                <div class="col">
+                    <label for="card_number">Credit card number</label>
+                    <input type="text" id="card_number" name="card_number" required>
+             </div>
+             </div>
+             <div class="row">
+                <div class="col">
+                    <label for="expiration">Expiration</label>
+                    <input type="text" id="expiration" name="expiration" required>
+                </div>
+                <div class="col">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" required>
+             </div>
+             </div>
+
+              <div class="row">
+                <div class="col">
+                     <label for="delivery">Delivery Request</label>
+                     <textarea id="delivery" name="delivery" rows="4" placeholder="Please check here."></textarea>
+                 </div>
+            </div>
+
+           
+          
+
+          <input type="submit" class="sumit-btn" value="Continue to checkout">
+        </div>
+
+        <div class="blue_cart">
+
+       <div class="cart">
+                <h3>Your cart</h3>
+                <div class="cart_item">
+                    <span>Product name</span><span>$12</span>
+                    <p>Brief description</p>
+                </div>
+
+                <div class="cart_item">
+                    <span>Second product</span><span>$8</span>
+                    <p>Brief description</p>
+                </div>
+
+                <div class="cart_item">
+                    <span>Third item</span><span>$5</span>
+                    <p>Brief description</p>
+                </div>
+
+                <div class="cart_item">
+                    <div class="green">
+                    <span>Promo code</span><span>-$5</span>
+                    <p>EXAMPLECODE</p>
+                    </div>
+                </div>
+
+                <div class="cart_item">
+                    <span>Total (USD)</span><span> $20</span>
+                </div>
+
+                <div class="promo">
+                    <input type="text" placeholder="Promo code">
+                    <button type="button">Redeem</button>
+            </div>
+           </div>
+
+           <div class="three">
+            <span>3</span>
+           </div>
+
+
+           </div>
+
+           
+
+           </div>
+           <div class="company">
+            <span>© 2017–2022 Company Name </span>
+            <p>Privacy Terms Support</p>
+           </div>
+           
+    
+    </form>
+</body>
+</html>

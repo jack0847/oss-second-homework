@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22200615 임규민 Dynamic</title>
+<html>
+    <head>
+        <style>
+            .main{
+                display: flex;
+            }
+            .main #textbox, #add, #remove{
+                margin  : 5px;
+            }
+            #adding{
+                margin: 30px;
+            }
+            .main #add{
+                background-color: blue;
+                color: white;
+                border: 0px;
+            }
+            .main #remove{
+                background-color:rgb(45, 83, 7);
+                color: white;
+                border: 0px;
+            }
+        </style>
+        <script>
+            function add(){
+                let s = document.getElementById("textbox").value;
+                let arr = s.split(",");
+
+                for(let i = 0; i < arr.length; i++){
+
+                    let li = document.createElement("li");
+    
+                    li.setAttribute("id", arr[i]);
+    
+                    let node = document.createTextNode(arr[i]);
+                    li.appendChild(node);
+    
+                    document.getElementById("adding").appendChild(li);
+                }
+
+            }
+            function remove(){
+                let ul = document.getElementById("adding");
+                let item = ul.getElementsByTagName('li');
+
+                let i = item.length;
+                for(i = i -1; i >= 0; i--){
+                    item[i].remove();
+                }
+
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>Dynamic Web Page</h1>
+
+        <div class="main">
+            <input type="text" name="textbox" id="textbox">
+            <button id="add" onclick=add()>추가</button>
+            <button id="remove" onclick=remove()>삭제</button>
+        </div>
+        <ul id="adding">
+        </ul>
+    </body>
+</html>
